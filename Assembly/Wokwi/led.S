@@ -3,13 +3,13 @@
    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* ++++++++++++++++++++ DATA MEMORY +++++++++++++++++++++++++++ */	
-	  .section	.data
+	.section	.data
 A: 	.word	0
 
 /* ++++++++++++++++++ PROGRAM MEMORY ++++++++++++++++++++++++++ */	
-	  .section	.text
-	  .syntax	unified// to accept older versions
-	  .global	main
+	.section	.text
+	.syntax	unified// to accept older versions
+	.global	main
 	
 main:
     BL    USER_GPIO_Init
