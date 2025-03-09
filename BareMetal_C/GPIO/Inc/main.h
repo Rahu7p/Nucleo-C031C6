@@ -32,10 +32,10 @@ typedef struct
 	volatile uint32_t BSRR;
 } GPIO_TypeDef;
 
-#define RCC_BASE	  0x40021000UL//		RCC base address
+#define RCC_BASE	0x40021000UL//		RCC base address
 #define GPIOA_BASE	0x50000000UL//		GPIO Port A base address
 
 #define RCC     (( RCC_TypeDef *)RCC_BASE )
-#define GPIOA		(( GPIO_TypeDef *)GPIOA_BASE )
+#define GPIOA	(( GPIO_TypeDef *)GPIOA_BASE )
 
 #endif /* MAIN_H_ */
