@@ -1,11 +1,11 @@
 /* ++++++++++++++++ DATA MEMORY ++++++++++++++++ */	
-	  .section	.data
+	.section	.data
 A: 	.word	0
 
 /* ++++++++++++++ PROGRAM MEMORY ++++++++++++++ */	
-	  .section	.text
-	  .syntax	unified// to accept older versions
-	  .global	main
+	.section	.text
+	.syntax	unified// to accept older versions
+	.global	main
 	
 main:
     // Enable GPIOA clock (assuming LED is connected to GPIOA)
@@ -41,4 +41,4 @@ main:
     STR   R1, [R0, #0x18]
 
 foreverLoop:
-	b		foreverLoop//	repeat
+    b	foreverLoop//	repeat
