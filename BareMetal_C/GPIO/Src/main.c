@@ -8,7 +8,6 @@
 #include "main.h"
 
 void USER_GPIO_Init( void );
-void USER_Delay( void );
 
 /* Superloop structure */
 int main(void)
