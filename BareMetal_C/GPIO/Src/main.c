@@ -1,5 +1,5 @@
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    This code turns ON the USER LED (LD4) of the Nucleo board
+    This code turns ON the USER LED (LD4) of the NUCLEO-C031C6
    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* **************** START *********************** */
@@ -16,7 +16,7 @@ int main(void)
 	USER_GPIO_Init( );
     	/* Repetitive block */
     	for(;;){
-    		GPIOA->BSRR =	0x1UL <<  5U; // Set PA5 high to turn on LED
+    		GPIOA->ODR = GPIOA->ODR |  ( 0x1UL <<  5U ); // Set PA5 high to turn on LED
     	}
 }
 
